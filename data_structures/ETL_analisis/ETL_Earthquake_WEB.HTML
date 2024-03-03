@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gráfico de Terremotos</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            margin: 20px;
+        }
+
+        .iframe-wrapper {
+            width: 100%;
+            overflow: hidden;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            position: relative;
+        }
+
+        .iframe-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Gráfico de Terremotos</h1>
+
+<!-- Dividir los gráficos en dos columnas -->
+<div class="container">
+    <div class="iframe-wrapper">
+        <iframe src="Grafico_terremoto_ultimo_mes.html" width="900" height="600"></iframe>
+    </div>
+    <div class="iframe-wrapper">
+        <iframe src="Grafico_terremoto_todo_mundo.html" width="900" height="600"></iframe>
+    </div>
+    <div class="iframe-wrapper">
+        <iframe src="Grafico_Distribucion_terremoto.html" width="900" height="600"></iframe>
+    </div>
+    <div class="iframe-wrapper">
+        <iframe src="Grafico_Profundidad_magnitud.html" width="900" height="600"></iframe>
+    </div>
+    <div class="iframe-wrapper">
+        <iframe src="Grafico_calor.html" width="900" height="600"></iframe>
+    </div>
+    <div class="iframe-wrapper">
+        <iframe src="Grafico_Magnitud_terremoto.html" width="900" height="600"></iframe>
+    </div>
+</div>
+
+</body>
+</html>
